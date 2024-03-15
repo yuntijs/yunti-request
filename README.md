@@ -6,6 +6,40 @@
 
 ---
 
+<details>
+<summary><kbd>Table of contents</kbd></summary>
+
+#### TOC
+
+- [支持的功能](#支持的功能)
+- [与 umi-request, fetch, axios 异同](#与-umi-request-fetch-axios-异同)
+- [TODO](#todo)
+- [安装](#安装)
+- [快速上手](#快速上手)
+- [API](#api)
+- [请求方法的别名](#请求方法的别名)
+- [创建实例](#创建实例)
+- [请求配置](#请求配置)
+  - [request options 参数](#request-options-参数)
+  - [extend options 初始化默认参数，支持以上所有](#extend-options-初始化默认参数支持以上所有)
+  - [request.download, 基于 downloadjs 封装，支持以上所有参数](#requestdownload-基于-downloadjs-封装支持以上所有参数)
+  - [request.upload options 参数，request.upload 基于 `XMLHttpRequest` 封装，与 request options 参数略有不同](#requestupload-options-参数requestupload-基于-xmlhttprequest-封装与-request-options-参数略有不同)
+  - [更新拓展实例默认参数](#更新拓展实例默认参数)
+- [响应结构](#响应结构)
+- [错误处理](#错误处理)
+- [中止请求](#中止请求)
+  - [通过 AbortController 来中止请求](#通过-abortcontroller-来中止请求)
+- [案例](#案例)
+  - [如何获取响应头信息](#如何获取响应头信息)
+  - [文件上传](#文件上传)
+  - [文件下载](#文件下载)
+- [开发和调试](#开发和调试)
+- [🤝 Contributing](#-contributing)
+
+####
+
+</details>
+
 ## 支持的功能
 
 - url 参数自动序列化
@@ -592,7 +626,7 @@ request.download('/export', {
 
 Contributions of all types are more than welcome, if you are interested in contributing code, feel free to check out our GitHub [Issues][github-issues-link] to get stuck in to show us what you’re made of.
 
-\[!\[]\[pr-welcome-shield]]\[pr-welcome-link]
+[![][pr-welcome-shield]][pr-welcome-link]
 
 [![][github-contrib-shield]][github-contrib-link]
 
@@ -610,3 +644,5 @@ Contributions of all types are more than welcome, if you are interested in contr
 [github-contrib-link]: https://github.com/yuntijs/yunti-request/graphs/contributors
 [github-contrib-shield]: https://contrib.rocks/image?repo=yuntijs%2Fyunti-request
 [github-issues-link]: https://github.com/yuntijs/yunti-request/issues
+[pr-welcome-link]: https://github.com/yuntijs/yunti-request/pulls
+[pr-welcome-shield]: https://img.shields.io/badge/☁️_pr_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
