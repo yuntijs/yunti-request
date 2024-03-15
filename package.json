@@ -1,0 +1,104 @@
+{
+  "name": "@yuntijs/request",
+  "version": "1.0.0",
+  "description": "A request tool based on fetch and XMLHttpRequest.",
+  "keywords": [
+    "request",
+    "fetch"
+  ],
+  "homepage": "https://yuntijs.github.io/yunti-request",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuntijs/yunti-request.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Carrotzpc",
+    "email": "zhang.pc3@gmail.com"
+  },
+  "main": "es/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "es",
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "build": "father-build",
+    "build:doc": "dumi build",
+    "dev": "dumi dev",
+    "lint": "npm run lint:es && npm run lint:md",
+    "lint-fix": "npm run lint-fix:es",
+    "lint-fix:es": "eslint --ext .jsx,.js,.tsx,.ts src --fix",
+    "lint:es": "eslint --ext .jsx,.js,.tsx,.ts src",
+    "lint:md": "remark . --quiet --output",
+    "prepare": "husky install",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "release": "semantic-release",
+    "start": "npm run dev",
+    "test": "umi-test",
+    "test:cov": "umi-test --coverzage"
+  },
+  "lint-staged": {
+    "*.md": [
+      "remark --quiet --output --",
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.json": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ],
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "abort-controller": "^3.0.0",
+    "downloadjs": "^1.4.7",
+    "qs": "^6.9.4"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@umijs/test": "^3.3.3",
+    "@yuntijs/lint": "^1.4.0",
+    "commitlint": "^18",
+    "create-test-server": "^3.0.1",
+    "dumi": "^1.0.34",
+    "eslint": "^8.56.0",
+    "father-build": "^1.18.2",
+    "husky": "^8",
+    "lint-staged": "^15",
+    "multer": "^1.4.5-lts.1",
+    "prettier": "^3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "remark": "^14",
+    "remark-cli": "^11",
+    "semantic-release": "^21",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@8.12.1",
+  "engines": {
+    "node": ">=14 <=16",
+    "pnpm": ">=8.1.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "yunti": {
+    "umd": {
+      "library": "YuntiRequest",
+      "entry": [
+        "/dist/index.umd.min.js"
+      ]
+    }
+  }
+}
