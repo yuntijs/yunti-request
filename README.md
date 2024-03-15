@@ -1,10 +1,29 @@
+<div align="center">
+
 <a name="readme-top"></a>
 
-# @yuntijs/request
+<h1 align="center">@yuntijs/request</h1>
 
 网络请求库，基于 umi-request (`fetch`) 和 `XMLHttpRequest` 封装，旨在为开发者提供一个统一的 api 调用方式，简化使用，并提供诸如上传、下载、错误处理及超时参数等常用功能.
 
----
+简体中文 ・ [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
+
+<!-- SHIELD GROUP -->
+
+[![][npm-release-shield]][npm-release-link]
+
+[![][github-release-shield]][github-release-link]
+[![][github-releasedate-shield]][github-releasedate-link]
+[![][github-action-release-shield]][github-action-release-link]<br/>
+[![][github-contributors-shield]][github-contributors-link]
+[![][github-forks-shield]][github-forks-link]
+[![][github-stars-shield]][github-stars-link]
+[![][github-issues-shield]][github-issues-link]
+[![][github-license-shield]][github-license-link]
+
+</div>
+
+<br/>
 
 <details>
 <summary><kbd>Table of contents</kbd></summary>
@@ -90,7 +109,7 @@
 ## 安装
 
 ```
-yarn add @yuntijs/request
+pnpm install @yuntijs/request
 ```
 
 ## 快速上手
@@ -641,8 +660,25 @@ Contributions of all types are more than welcome, if you are interested in contr
 <!-- LINK GROUP -->
 
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
+[github-action-release-link]: https://github.com/yuntijs/yunti-request/actions/workflows/release.yml
+[github-action-release-shield]: https://img.shields.io/github/actions/workflow/status/yuntijs/lowcode-tools/release.yml?label=release&labelColor=black&logo=githubactions&logoColor=white&style=flat-square
 [github-contrib-link]: https://github.com/yuntijs/yunti-request/graphs/contributors
 [github-contrib-shield]: https://contrib.rocks/image?repo=yuntijs%2Fyunti-request
+[github-contributors-link]: https://github.com/yuntijs/yunti-request/graphs/contributors
+[github-contributors-shield]: https://img.shields.io/github/contributors/yuntijs/yunti-request?color=c4f042&labelColor=black&style=flat-square
+[github-forks-link]: https://github.com/yuntijs/yunti-request/network/members
+[github-forks-shield]: https://img.shields.io/github/forks/yuntijs/yunti-request?color=8ae8ff&labelColor=black&style=flat-square
 [github-issues-link]: https://github.com/yuntijs/yunti-request/issues
+[github-issues-shield]: https://img.shields.io/github/issues/yuntijs/yunti-request?color=ff80eb&labelColor=black&style=flat-square
+[github-license-link]: https://github.com/yuntijs/yunti-request/blob/main/LICENSE
+[github-license-shield]: https://img.shields.io/github/license/yuntijs/yunti-request?color=white&labelColor=black&style=flat-square
+[github-release-link]: https://github.com/yuntijs/yunti-request/releases
+[github-release-shield]: https://img.shields.io/github/v/release/yuntijs/yunti-request?color=369eff&labelColor=black&logo=github&style=flat-square
+[github-releasedate-link]: https://github.com/yuntijs/yunti-request/releases
+[github-releasedate-shield]: https://img.shields.io/github/release-date/yuntijs/yunti-request?labelColor=black&style=flat-square
+[github-stars-link]: https://github.com/yuntijs/yunti-request/network/stargazers
+[github-stars-shield]: https://img.shields.io/github/stars/yuntijs/yunti-request?color=ffcb47&labelColor=black&style=flat-square
+[npm-release-link]: https://www.npmjs.com/package/@yuntijs/request
+[npm-release-shield]: https://img.shields.io/npm/v/@yuntijs/request?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
 [pr-welcome-link]: https://github.com/yuntijs/yunti-request/pulls
 [pr-welcome-shield]: https://img.shields.io/badge/☁️_pr_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
