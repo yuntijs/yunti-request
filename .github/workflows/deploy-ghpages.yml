@@ -19,10 +19,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js v18.x
+      - name: Setup Node.js v16.x
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 16
 
       - name: Install pnpm v8.x
         uses: pnpm/action-setup@v2
@@ -33,7 +33,7 @@ jobs:
         run: pnpm i
 
       - name: Build website
-        run: npm run docs:build
+        run: npm run build:doc
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus

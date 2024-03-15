@@ -28,7 +28,7 @@ coverage
 # production
 dist
 es
-lib
+/lib
 umd
 logs
 test-output
