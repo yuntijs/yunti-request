@@ -67,7 +67,9 @@
 - api 超时支持
 - 统一的错误处理方式
 - 类 axios 的取消请求
-- 支持 node 环境发送 http 请求
+
+<!-- - 支持 node 环境发送 http 请求 (Node.js v18+) -->
+
 - 文件上传支持，基于 `XMLHttpRequest` 封装，支持获取上传进度
 - 文件下载支持，基于 [downloadjs](https://www.npmjs.com/package/downloadjs) 封装
 
@@ -76,7 +78,7 @@
 | 特性       | @yuntijs/request | umi-request    | fetch          | axios          |
 | :--------- | :--------------- | :------------- | :------------- | :------------- |
 | 实现       | 浏览器原生支持   | 浏览器原生支持 | 浏览器原生支持 | XMLHttpRequest |
-| 大小       | -                | 9k             | 4k (polyfill)  | 14k            |
+| 大小       | 17k              | 9k             | 4k (polyfill)  | 15.5k          |
 | query 简化 | ✅               | ✅             | ❌             | ✅             |
 | post 简化  | ✅               | ✅             | ❌             | ❌             |
 | 超时       | ✅               | ✅             | ❌             | ✅             |

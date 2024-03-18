@@ -1,5 +1,3 @@
-import 'abort-controller/polyfill';
-
 import { getEnv } from '../helpers';
 
 export const AbortController =
