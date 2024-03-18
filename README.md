@@ -30,6 +30,8 @@
 
 #### TOC
 
+- [⚠️ Warning](#️-warning)
+  - [本组件仅作为历史项目的依赖，新项目建议大家直接使用 Axios.](#本组件仅作为历史项目的依赖新项目建议大家直接使用-axios)
 - [支持的功能](#支持的功能)
 - [与 umi-request, fetch, axios 异同](#与-umi-request-fetch-axios-异同)
 - [TODO](#todo)
@@ -58,6 +60,12 @@
 ####
 
 </details>
+
+## ⚠️ Warning
+
+### 本组件仅作为历史项目的依赖，新项目建议大家直接使用 [Axios](https://axios-http.com/).
+
+<br/>
 
 ## 支持的功能
 
