@@ -2,6 +2,31 @@
 
 # Changelog
 
+## [Version 1.1.0](https://github.com/yuntijs/yunti-request/compare/v1.0.0...v1.1.0)
+
+<sup>Released on **2024-03-18**</sup>
+
+#### ✨ Features
+
+- **misc**: Remove AbortController polyfill.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's improved
+
+- **misc**: Remove AbortController polyfill ([8eea8bb](https://github.com/yuntijs/yunti-request/commit/8eea8bb))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## Version 1.0.0
 
 <sup>Released on **2024-03-15**</sup>
